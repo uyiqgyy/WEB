@@ -1,0 +1,23 @@
+Imagine you are developing a web-application and you decide to decouple the functionality from the presentation of the application, because it affords greater freedom.
+
+You create an API and let others implement their own front-ends over it as well. What you just did here is implement an SOA methodology, i.e. using web-services.
+
+Web services make functional building-blocks accessible over standard Internet protocols independent of platforms and programming languages.
+So, you design an interchange mechanism between the back-end (web-service) that does the processing and generation of something useful, and the front-end (which consumes the data), which could be anything. 
+(A web, mobile, or desktop application, or another web-service). The only limitation here is that the front-end and back-end must "speak" the same "language".
+
+That's where SOAP and REST come in. They are standard ways you'd pick communicate with the web-service.
+
+SOAP:
+
+SOAP internally uses XML to send data back and forth. SOAP messages have rigid structure and the response XML then needs to be parsed. WSDL is a specification of what requests can be made, with which parameters, and what they will return. It is a complete specification of your API.
+
+REST:
+
+REST is a design concept.
+
+The World Wide Web represents the largest implementation of a system conforming to the REST architectural style.
+It isn't as rigid as SOAP. RESTful web-services use standard URIs and methods to make calls to the webservice. When you request a URI, it returns the representation of an object, that you can then perform operations upon (e.g. GET, PUT, POST, DELETE). You are not limited to picking XML to represent data, you could pick anything really (JSON included)
+
+Flickr's REST API goes further and lets you return images as well.
+JSON and XML, are functionally equivalent, and either could be chosen. XML is thought of as being too verbose, and harder to parse, so many-a-times, data is more adequately represented using JSON. (E.g. serialization)
